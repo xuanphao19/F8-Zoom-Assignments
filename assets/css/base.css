@@ -19,23 +19,21 @@
 
   /* bgr color variable  */
   --bgr-color: #000958;
-  --neutral-text-color: #48496a;
+  --neutral-bgr-color: #134db9;
   --bgr-second-color: #fff6ed;
 
   --bs-gutter-x: 4rem;
-  --bs-gutter-y: 5rem;
-  --container-width: calc(min(1170px, 100% - (var(--bs-gutter-y) * 2)));
+  --bs-gutter-y: 4rem;
+  --container-width: calc(min(1320px, 100% - (var(--bs-gutter-y) * 2)));
 
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
-
-  --bs-transition: opacity 0.25s linear, color 0.25s ease-in-out, background-color 0.25s ease-in-out,
-    border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-
-  --bs-gradient-180: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-gradient-90: linear-gradient(90deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 
   --bs-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), -1px -1px 1px rgba(0, 0, 0, 0.2), -1px 1px 1px rgba(0, 0, 0, 0.2),
     1px -1px 1px rgba(0, 0, 0, 0.2);
+
+  --bs-transition: opacity 0.25s linear, color 0.25s ease-in-out, background-color 0.25s ease-in-out,
+    border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
 
   --bs-blue: #0d6efd;
   --bs-purple: #6610f2;
@@ -50,7 +48,6 @@
 
 html {
   width: 100%;
-  min-height: 100%;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -105,9 +102,22 @@ a {
   background: linear-gradient(45deg, #ff6b6b, #f5d365, #0400ff);
 }
 
+.container {
+  width: var(--container-width);
+  margin-inline: auto;
+}
+
 section {
   padding-block: calc(var(--bs-gutter-y) * 2);
   scroll-margin-top: 100px;
+}
+
+.content section {
+  padding-block: calc(var(--bs-gutter-y) * 0.75);
+}
+
+.content section:last-child {
+  padding: calc(var(--bs-gutter-y) * 0.5) 0 0;
 }
 
 h3.sub-title,
@@ -116,7 +126,7 @@ h3.sub-title,
   text-wrap: balance;
 }
 section h2.title {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.2;
   color: var(--bgr-color);
@@ -156,11 +166,6 @@ section img {
   object-fit: cover;
 }
 
-.container {
-  width: var(--container-width);
-  margin-inline: auto;
-}
-
 .btn-link,
 .btn {
   display: inline-block;
@@ -168,6 +173,7 @@ section img {
   padding: 1rem 1.8rem;
   text-align: center;
   cursor: pointer;
+  user-select: none;
   text-decoration: none;
   vertical-align: middle;
   text-wrap: nowrap;
@@ -177,7 +183,7 @@ section img {
   font-weight: 500;
   color: var(--btn-text-color);
 
-  background: var(--primary-color);
+  background-color: var(--primary-color);
   border: 0.1rem solid transparent;
   border-radius: 9999px;
 }
@@ -208,10 +214,8 @@ a,
 .btn-link,
 .logo,
 .btn {
-  user-select: none;
   transition: var(--bs-transition);
 }
-
 button,
 .button,
 .btn-link,
@@ -226,5 +230,36 @@ button,
 .btn:hover {
   opacity: 0.8;
   cursor: pointer;
-  color: currentColor;
+  color: #daffff;
+}
+
+.back-top {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  padding: 8px;
+  border-radius: 10px;
+  color: var(--primary-color);
+  border: 1px solid currentColor;
+  visibility: hidden;
+  z-index: 999;
+  opacity: 0;
+  background: url(https://xuanphao19.github.io/F8_Pro_practice/assets/img/Small_icon/to_top.svg) center / 100% no-repeat
+      content-box,
+    var(--primary-color);
+  padding: 0.8rem;
+  transition: padding 0.3s ease, color 0.3s ease, background 0.3s ease, visibility 0.3s ease;
+}
+.back-top:hover {
+  background: url(https://xuanphao19.github.io/F8_Pro_practice/assets/img/Small_icon/to_top.svg) center / 100% no-repeat
+      content-box,
+    var(--neutral-bgr-color);
+  padding: 0.6rem;
+}
+.back-top.active {
+  visibility: visible;
+  opacity: 1;
 }

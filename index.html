@@ -8,29 +8,775 @@
     <title>F8 Zoom Assignments</title>
     <meta
       name="description"
-      content="Learn programming to get a job. Join F8's online courses to learn programming and get a job. We have a community of over 1 million members, and we are here to help you succeed in your career." /> 
+      content="Learn programming to get a job. Join F8's online courses to learn programming and get a job. We have a community of over 1 million members, and we are here to help you succeed in your career." />
+
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
   <body>
-    <div class="wbr">
-      <span class="dot" style="--i: 1"></span>
-      <span class="dot" style="--i: 2"></span>
-      <span class="dot" style="--i: 3"></span>
-      <span class="dot" style="--i: 4"></span>
-      <span class="dot" style="--i: 5"></span>
-      <span class="dot" style="--i: 6"></span>
-      <span class="dot" style="--i: 7"></span>
-      <span class="dot" style="--i: 8"></span>
-      <span class="dot" style="--i: 9"></span>
-      <span class="dot" style="--i: 10"></span>
-      <span class="dot" style="--i: 11"></span>
-      <span class="dot" style="--i: 12"></span>
-      <span class="dot" style="--i: 13"></span>
-      <span class="dot" style="--i: 14"></span>
-      <span class="dot" style="--i: 15"></span>
-    </div>
+    <header id="header">
+      <div class="container header">
+        <a href="/" class="logo flex-center">
+          <img src="./assets/images/icons/f8_icon.webp" alt="" />
+          F8 Homework
+        </a>
+        <nav class="navbar">
+          <ul class="list-item">
+            <li class="item">
+              <a href="#top" class="item-link">Home</a>
+            </li>
+            <li class="item dropdown">
+              <span class="item-link flex-center">
+                <span>Topic</span>
+                <svg class="icon-link" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+                  <path
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
+                </svg>
+              </span>
+              <ul>
+                <li><a class="item-link flex-center" href="#storages">HTML-CSS</a></li>
+                <li><a class="item-link flex-center" href="#storages">JavaScript</a></li>
+              </ul>
+            </li>
+
+            <li class="item">
+              <a href="#features" class="item-link">Features</a>
+            </li>
+            <li class="item">
+              <a href="#blog" class="item-link">Notes</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <a href="#!" class="register">Register</a>
+          <button class="btn sign-in">Sign in</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section id="hero" class="hero">
+          <div class="row">
+            <div class="col col-left" data-aos="fade-down" data-delay="2000" data-aos-duration="3000">
+              <a
+                class="note"
+                href="https://zoom.fullstack.edu.vn/"
+                target="_blank"
+                rel="noopener noreferrer"
+                translate="no">
+                F8 Zoom online
+              </a>
+              <h1 class="title">
+                Web Dev
+                <span class="payment">Homework - F8 Fullstack</span>
+                Course.
+              </h1>
+              <p class="desc">
+                This website is my personal archive of homework assignments from the Fullstack Web Development course
+                organized by F8, which I am attending online via Zoom. All exercises are neatly categorized and updated
+                regularly, making it easy to review and track my progress. It’s a simple way to document my learning
+                journey and reflect on what I’ve built throughout the course.
+              </p>
+              <span class="annotation">* Starting point of Inspiration</span>
+              <a
+                class="btn hero-btn flex-center video glightbox"
+                href="https://www.youtube.com/embed/DpvYHLUiZpc"
+                target="_self">
+                <span>Watch Video</span>
+                <span class="icon-play flex-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 18 18" fill="none">
+                    <g transform="translate(3, 0)">
+                      <path
+                        d="M14.4462 10.6965C14.3614 10.7835 14.0414 11.1555 13.7433 11.4615C11.9956 13.386 7.43643 16.536 5.05017 17.4975C4.68777 17.652 3.77155 17.979 3.28203 18C2.81296 18 2.36581 17.892 1.93911 17.673C1.40721 17.367 0.980516 16.8855 0.746712 16.317C0.596201 15.9225 0.362397 14.742 0.362397 14.721C0.128592 13.4295 0 11.331 0 9.012C0 6.8025 0.128592 4.7895 0.320019 3.4785C0.341939 3.4575 0.575743 1.9905 0.831466 1.488C1.30054 0.57 2.21676 0 3.19727 0H3.28203C3.9206 0.0225 5.26352 0.5925 5.26352 0.6135C7.52119 1.5765 11.9752 4.572 13.7652 6.5625C13.7652 6.5625 14.2694 7.074 14.4886 7.3935C14.8305 7.8525 15 8.421 15 8.9895C15 9.624 14.8086 10.215 14.4462 10.6965Z"
+                        fill="currentColor" />
+                    </g>
+                  </svg>
+                </span>
+              </a>
+            </div>
+
+            <div class="col col-right" data-aos="fade-left" data-delay="3000" data-aos-duration="2000">
+              <div class="col-img flex-center">
+                <img class="f8-pro-free" src="./assets/images/image/f8-pro-free.jpg" alt="" />
+              </div>
+
+              <a href="https://www.facebook.com/f8vnofficial?locale=vi_VN" class="deposite">
+                <div class="icon-img flex-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M1 11V19H19V11" stroke="#712fbf" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M10 1V13M10 13L13 10M10 13L7 10"
+                      stroke="#712fbf"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <span class="deposite-title">Discount</span>
+                <span class="price">$300.000</span>
+              </a>
+
+              <a href="https://www.youtube.com/@F8VNOfficial" class="interest">
+                <span class="percent flex-center">0đ</span>
+                <span class="interest-title flex-center">Interest</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <div id="storages" class="storages">
+          <div class="sidebar">
+            <div class="lesson-chapter">
+              <div class="chapter-title">Chapter 1</div>
+              <div class="chapter-desc">HTML - CSS</div>
+              <ul class="lesson-list">
+                <li class="lesson">Client - Server</li>
+                <li class="lesson">Client - Server</li>
+                <li class="lesson">Client - Server</li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="training-content" class="content">
+            <section id="session-1" class="training-session">
+              <div class="session" data-aos="fade-left" data-delay="3000" data-aos-duration="2000">
+                <a
+                  class="note"
+                  href="https://zoom.fullstack.edu.vn/?id=0cdb1780-4244-4e7d-b4b6-e6da98fd9cdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  translate="no">
+                  F8 Zoom online Session 1:
+                </a>
+
+                <h2 class="title">Client - Server, HTML cơ bản</h2>
+                <ul class="list-item">
+                  <li class="item">
+                    <div class="item-1">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day1-3/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          1. How 60 Minutes a Day Can Change Your Life
+                        </a>
+                      </h3>
+                      <p class="desc">Xây dựng trang HTML: How 60 Minutes a Day Can Change Your Life!</p>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="item-1">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day1-3/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          2. Game NESTER
+                        </a>
+                      </h3>
+                      <p class="desc">Kết quả hoàn thành Game NESTER</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="repoGitHub">
+                  <a
+                    class="btn get-start"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/Thanh-Hoa95/zoom-day1-3">
+                    Repo GitHub
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <section id="session-2" class="training-session">
+              <div class="session" data-aos="fade-left" data-delay="3000" data-aos-duration="2000">
+                <a
+                  class="note"
+                  href="https://zoom.fullstack.edu.vn/?id=960c458e-b74a-4967-9859-090d1afc8334"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  translate="no">
+                  F8 Zoom online Session 2:
+                </a>
+
+                <h2 class="title">Attribute, Inline, Block, CSS cơ bản</h2>
+                <ul class="list-item">
+                  <li class="item">
+                    <div class="item-2">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day1-3/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          1. Tạo trang hiển thị một bài thơ!
+                        </a>
+                      </h3>
+                      <p class="desc">Luyện cấu trúc html cơ bản. Sử dụng thẻ tiêu đề phù hợp</p>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="item-2">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day1-3/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          2. Tạo một bài viết nói về bài thơ
+                        </a>
+                      </h3>
+                      <p class="desc">
+                        Thực hành luyện tập cách sử dụng các thẻ html. Tạo tiêu đề, tạo danh sách, tạo liên kết, sử dụng
+                        liên kết lồng trong tiêu đề!
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="item-2">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day1-3/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          3. Highlight code trong nội dung bài viết
+                        </a>
+                      </h3>
+                      <p class="desc">
+                        Làm quen với thư việ PrismJS để highlight các khối code, luyện tập sử dụng thẻ html đúng ngữ
+                        nghĩa
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="item-2">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day1-3/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          4. Xây dựng trang giới thiệu bản thân
+                        </a>
+                      </h3>
+                      <p class="desc">
+                        Làm quen với thư viện PrismJS để highlight các khối code, luyện tập sử dụng thẻ html đúng ngữ
+                        nghĩa
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="repoGitHub">
+                  <a
+                    class="btn get-start"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/Thanh-Hoa95/zoom-day1-3">
+                    Repo GitHub
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <section id="session-3" class="training-session">
+              <div class="session" data-aos="fade-left" data-delay="3000" data-aos-duration="2000">
+                <a
+                  class="note"
+                  href="https://zoom.fullstack.edu.vn/?id=960c458e-b74a-4967-9859-090d1afc8334"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  translate="no">
+                  F8 Zoom online Session 3:
+                </a>
+
+                <h2 class="title">Kế thừa, Simple selectors, Box model</h2>
+                <ul class="list-item">
+                  <li class="item">
+                    <div class="item-3">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day1-3/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          1. Chỉnh sửa, căn chỉnh lại giao diện dự án 1.
+                        </a>
+                      </h3>
+                      <p class="desc">Luyện cấu trúc html cơ bản. Sử dụng thẻ tiêu đề phù hợp</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="repoGitHub">
+                  <a
+                    class="btn get-start"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/Thanh-Hoa95/zoom-day1-3">
+                    Repo GitHub
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <section id="session-9" class="training-session">
+              <div class="session" data-aos="fade-left" data-delay="3000" data-aos-duration="2000">
+                <a
+                  class="note"
+                  href="https://zoom.fullstack.edu.vn/?id=960c458e-b74a-4967-9859-090d1afc8334"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  translate="no">
+                  F8 Zoom online Session 9:
+                </a>
+
+                <h2 class="title">Animation, BEM, Tags: table, iframe, video và audio</h2>
+                <ul class="list-item">
+                  <li class="item">
+                    <div class="item-9">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="./ZoomHomework-9/homework-9..html"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          1. Phân tích và code Animation
+                        </a>
+                      </h3>
+                      <p class="desc">Luyện tập phân tích, áp dụng animation và animation-delay tạo hoạt ảnh.</p>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="item-9">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day9/html/contact.html"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          2. Xây dựng trang Contact
+                        </a>
+                      </h3>
+                      <p class="desc">
+                        Luyện tập phân tích bố cục, dàn trang. Áp dụng tiêu chuẩn BEM trong thực chiến. Làm quen nhúng
+                        google map!
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="item-9">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day9/html/table.html"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          3. Xây dựng giao diện Bảng
+                        </a>
+                      </h3>
+                      <p class="desc">
+                        Luyện tập thiết kế giao diện bảng, sử dụng thẻ table, tbody, thead, tfoot. Làm quen với tái sử
+                        dụng code CSS.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="item-9">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day9/html/css-selectors.html"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          4. Hoàn thành CSS selector qua Game
+                        </a>
+                      </h3>
+                      <p class="desc">
+                        Luyện tập kỹ năng đọc hiểu, sử dụng CSS selector, selector nâng cao, các thuộc tính CSS cơ bản.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="repoGitHub">
+                  <a
+                    class="btn get-start"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/Thanh-Hoa95/zoom-day9">
+                    Repo GitHub
+                  </a>
+                  
+                </div>
+              </div>
+            </section>
+
+            <!-- https://zoom.fullstack.edu.vn/?id=08c901f1-7549-4fb2-8735-342fb35086c6  -->
+
+            <!--
+            <section id="features" class="features section-news">
+              <div class="row">
+                <div class="col col-left">
+                  <a
+                    class="note"
+                    href="https://zoom.fullstack.edu.vn/?id=946fe706-b5ca-4aa6-9c85-079747ffd53c"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    translate="no">
+                    F8 Zoom online Session 9:
+                  </a>
+
+                  <h2 class="title">Attribute, Inline, Block, CSS cơ bản</h2>
+                  <p class="desc">
+                    We bring together everything that’s required to build websites and apps that accept payments and
+                    send payouts globally. We are the best platform.
+                  </p>
+                  <ul class="menu">
+                    <li class="item">Global Payments</li>
+                    <li class="item">One-Click Purchase</li>
+                    <li class="item">Friendly Price</li>
+                  </ul>
+                  <a
+                    class="btn get-start"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/Thanh-Hoa95/zoom-day9">
+                    Repo GitHub
+                  </a>
+                </div>
+
+
+
+
+              <div class="send-money">
+                    <div class="fly-icon">
+                      <img src="./assets/images/icons/fly.svg" alt="" />
+                    </div>
+                    <div class="payment">
+                      <span class="money flex-center">
+                        Send Money
+                        <span>- $600</span>
+                      </span>
+                      <span class="receive flex-center">
+                        Airbnb Payment
+                        <span>Sep 23</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="income">
+                    <img src="./assets/images/icons/income.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="about" class="about section-news">
+              <div class="row">
+                 <div class="col col-left">
+                  <div class="col-img">
+                    <img src="./assets/images/image/img2.png" alt="" />
+                  </div>
+
+                  <div class="method">
+                    <span class="instructions">Choose payment method:</span>
+                    <div class="detail">
+                      <a href="#" class="icon-brand">
+                        <img src="./assets/images/icons/master-card.svg" alt="" />
+                      </a>
+                      <a href="#" class="icon-brand">
+                        <img src="./assets/images/icons/maestro.svg" alt="" />
+                      </a>
+                      <a href="#" class="icon-brand">
+                        <img src="./assets/images/icons/asia-card.svg" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="detail">
+                      <a href="#" class="icon-brand">
+                        <img src="./assets/images/icons/visa-card.svg" alt="" />
+                      </a>
+                      <a href="#" class="icon-brand">
+                        <img src="./assets/images/icons/payper.svg" alt="" />
+                      </a>
+                      <a href="#" class="icon-brand">
+                        <img src="./assets/images/icons/more.svg" alt="" />
+                      </a>
+                    </div>
+                    <a href="#" class="dollar flex-center">
+                      <img src="./assets/images/icons/dolla.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col col-right">
+                  <a
+                    class="note"
+                    href="https://zoom.fullstack.edu.vn/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    translate="no">
+                    F8 Zoom online
+                  </a>
+                  <h2 class="title">Session 3: Kế thừa, Simple selectors, Box model</h2>
+                  <p class="desc">
+                    We bring together eveything that’s required to build websites and apps that accept payments and send
+                    payouts globally. We are the best platform.
+                  </p>
+                  <ul class="menu">
+                    <li class="item">Powerfull App</li>
+                    <li class="item">Transparency And Speed</li>
+                    <li class="item">Multiple Use Capabilities</li>
+                  </ul>
+                  <div class="btn get-start">Repo GitHub</div>
+                </div>
+              </div>
+            </section>
+
+            <section id="feedback" class="feedback">
+              <div class="section-top">
+                <span class="note">Our Testimonial</span>
+                <h2 class="title">What Clients Says</h2>
+                <p class="desc">
+                  Read what clients says about us and about our online banking services that may inspire you
+                </p>
+              </div>
+
+              <div class="row">
+                <div class="col col-left">
+                  <p class="news-desc">
+                    Fantastic platform for online banking. The best online banking platform I have used. Payments,
+                    loans, and money transfers have never been so much easier before. I am very much happy about this
+                    great online bank.
+                  </p>
+
+                  <div class="subject">
+                    <div class="avatar flex-center">
+                      <img src="./assets/images/image/img1.png" alt="" />
+                    </div>
+                    <div class="member-name">Alastair Cook</div>
+                    <div class="job">Businessmen</div>
+                  </div>
+                </div>
+
+                <div class="col col-right">
+                  <p class="news-desc">
+                    Fantastic platform for online banking. The best online banking platform I have used. Payments,
+                    loans, and money transfers have never been so much easier before. I am very much happy about this
+                    great online bank.
+                  </p>
+                  <div class="subject">
+                    <div class="avatar flex-center">
+                      <img src="./assets/images/image/img2.png" alt="" />
+                    </div>
+                    <div class="member-name">Alastair Foaks</div>
+                    <div class="job">Businessmen</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-dot">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </section>
+
+            <section id="blog" class="blog">
+              <div class="blog-top">
+                <div class="top-left">
+                  <div class="note">Our Blog</div>
+                  <h2 class="title">Get The Updates</h2>
+                  <p class="desc">
+                    Read our blog for the regular updates about us and about our online banking services that may
+                    inspire you
+                  </p>
+                </div>
+
+                <div>
+                  <div class="btn read-all">Read All</div>
+                </div>
+              </div>
+
+              <div class="blog-content">
+                <div class="blog-item">
+                  <div class="blog-img">
+                    <img src="./assets/images/image/img4.png" alt="" />
+                  </div>
+
+                  <div class="item-content">
+                    <span class="note">July 03, 2022</span>
+                    <h4 class="blog-title sub-title">
+                      Online bank is the best and secure way to save in the future...
+                    </h4>
+                    <div class="btn-link read-block">Read Blog</div>
+                  </div>
+                </div>
+
+                <div class="blog-item">
+                  <div class="blog-img">
+                    <img src="./assets/images/image/img5.png" alt="" />
+                  </div>
+
+                  <div class="item-content">
+                    <span class="note">July 03, 2022</span>
+                    <h4 class="blog-title sub-title">Why do you need to open a bank account in online..</h4>
+                    <div class="btn-link read-block">Read Blog</div>
+                  </div>
+                </div>
+
+                <div class="blog-item">
+                  <div class="blog-img">
+                    <img src="./assets/images/image/img6.png" alt="" />
+                  </div>
+
+                  <div class="item-content">
+                    <span class="note">July 03, 2022</span>
+                    <h4 class="blog-title sub-title">The benefits that we get from credit card at anytime...</h4>
+                    <div class="btn-link read-block">Read Blog</div>
+                  </div>
+                </div>
+
+                <div class="blog-item">
+                  <div class="blog-img">
+                    <img src="./assets/images/image/img7.png" alt="" />
+                  </div>
+
+                  <div class="item-content">
+                    <span class="note">July 03, 2022</span>
+                    <h4 class="blog-title sub-title">How to manage your money in online in this busy days...</h4>
+                    <div class="btn-link read-block">Read Blog</div>
+                  </div>
+                </div>
+              </div>
+            </section> -->
+
+            <section id="download-app">
+              <div class="download-app">
+                <div class="app-top">
+                  <div class="note">Our App</div>
+                  <h2 class="title">Download the Apps</h2>
+                  <p class="desc">
+                    Download our mobile apps and get started today with a special online bank and move faster
+                  </p>
+                </div>
+
+                <div class="app-group">
+                  <a href="#!" class="app-link">
+                    <img src="./assets/images/icons/google.svg" alt="" />
+                  </a>
+                  <a href="#!" class="app-link">
+                    <img src="./assets/images/icons/ap.svg" alt="" />
+                  </a>
+                </div>
+
+                <img class="app-start start1" src="./assets/images/icons/star.svg" alt="" />
+                <img class="app-start start2" src="./assets/images/icons/star.svg" alt="" />
+                <img class="app-start start3" src="./assets/images/icons/star.svg" alt="" />
+                <img class="app-start start4" src="./assets/images/icons/star.svg" alt="" />
+                <img class="app-start start5" src="./assets/images/icons/star.svg" alt="" />
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col logo">
+            <img src="./assets/images/icons/logo.svg" alt="" />
+          </div>
+
+          <ul class="footer-col menu">
+            <span class="title">Sitemap</span>
+            <li class="item">
+              <a class="item-link" href="#top">Home</a>
+            </li>
+            <li class="item">
+              <a class="item-link" href="#top">About</a>
+            </li>
+            <li class="item">
+              <a class="item-link" href="#top">Growers</a>
+            </li>
+            <li class="item">
+              <a class="item-link" href="#top">Merchants</a>
+            </li>
+            <li class="item">
+              <a class="item-link" href="#top">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="footer-col menu">
+            <span class="title">Socials</span>
+            <li class="item">
+              <a class="item-link" href="#top">Facebook</a>
+            </li>
+            <li class="item">
+              <a class="item-link" href="#top">Linkedin</a>
+            </li>
+            <li class="item">
+              <a class="item-link" href="#top">Instagram</a>
+            </li>
+            <li class="item">
+              <a class="item-link" href="#top">Twitter</a>
+            </li>
+          </ul>
+
+          <div class="footer-col">
+            <div class="office-address title">Head Office</div>
+            <p class="desc">Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22, Charlottesville, CA 45565</p>
+
+            <div class="email-address title">News letter</div>
+            <div class="send-email">
+              <input type="text" placeholder="Your email" />
+              <div class="btn subscribe">Subscribe</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact">
+          <a href="#" class="email">email@gmail.com</a>
+          <span class="phone">(123) 456-7890</span>
+        </div>
+      </div>
+
+      <a href="https://project8complete.vercel.app/" class="copy-right">© 2020 Ligft Media All rights reserved.</a>
+    </footer>
+    <a class="back-top" href="#Top"></a>
+
+    <script src=".//assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/project5.js"></script>
   </body>
 </html>
