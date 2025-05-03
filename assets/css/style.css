@@ -297,6 +297,7 @@
 #storages {
   scroll-margin-top: 96px;
 }
+
 .storages {
   display: flex;
   gap: 20px;
