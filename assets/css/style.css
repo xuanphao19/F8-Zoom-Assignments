@@ -302,6 +302,7 @@
   gap: 20px;
   background: #f9f5f5;
 }
+
 .sidebar {
   position: relative;
   display: flex;
@@ -310,25 +311,89 @@
   width: 25%;
   background: #5a47474d;
 }
-.content {
-  flex: 1;
+.foreword {
+  display: flex;
+  padding: 10px 0;
+  font-weight: 900;
+  cursor: pointer;
+  user-select: none;
 }
-.lesson-chapter {
+
+.course-structure {
   position: sticky;
   top: 96px;
   left: 0;
   min-height: calc(100vh - 96px);
-  padding: 10px 20px;
+  padding-block: calc(var(--bs-gutter-y) * 0.75);
   color: var(--white-color);
   font-size: 1.8rem;
   font-weight: 600;
   background: #7264d6;
 }
 
+.course-structure > * {
+  padding: 4px 20px;
+}
+
+.unit {
+  padding: 4px 0px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.unit-title {
+  padding: 4px 20px;
+}
+
+.unit li {
+  padding: 4px 20px 4px 30px;
+  font-size: 1.4rem;
+}
+
 /* ==== training-session ==== */
+
+#toggle-preface {
+  display: none;
+}
+.preface {
+  padding: 8px;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: height 0.25s linear, opacity 0.25s linear;
+}
+
+#toggle-preface:checked + .preface {
+  height: 450px;
+  opacity: 1;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), -1px 1px 2px 0px rgba(0, 0, 0, 0.04);
+  overflow-y: auto;
+}
+
+.preface-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  padding: calc(var(--bs-gutter-y) * 0.5) 10px;
+}
+.preface p {
+  padding: 6px 10px;
+  text-align: justify;
+}
+
+.content {
+  flex: 1;
+  padding: 8px;
+}
+
 .get-start {
   font-size: 16px;
-  min-width: 132px;
   padding-block: 8px;
 }
 

@@ -169,7 +169,7 @@ section img {
 .btn-link,
 .btn {
   display: inline-block;
-  min-width: 9.8rem;
+  min-width: 132px;
   padding: 1rem 1.8rem;
   text-align: center;
   cursor: pointer;
