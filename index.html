@@ -135,9 +135,15 @@
           <div class="sidebar">
             <div class="course-structure">
               <label class="foreword" for="toggle-preface">Lời nói đầu</label>
+              <div class="structure">Course Structure:</div>
               <div class="topic">Frontend Exercises:</div>
+              <input type="radio" name="check-lessons" id="close-lessons" />
               <div class="unit">
-                <div class="unit-title">HTML - CSS / Khoa học máy tính:</div>
+                <div class="unit-title">
+                  <label class="open-lessons" for="html-css-lessons">HTML - CSS / Khoa học máy tính:</label>
+                  <label class="close-lessons" for="close-lessons">HTML - CSS / Khoa học máy tính::</label>
+                </div>
+                <input type="radio" name="check-lessons" id="html-css-lessons" />
                 <ul class="lesson-list">
                   <li class="lesson">
                     <a href="#session-1" class="lesson-link">1. Client - Server, HTML cơ bản</a>
@@ -170,29 +176,60 @@
               </div>
 
               <div class="unit">
-                <div class="unit-title">JavaScript:</div>
+                <div class="unit-title">
+                  <label class="open-lessons" for="JavaScript-lessons">JavaScript:</label>
+                  <label class="close-lessons" for="close-lessons">JavaScript:</label>
+                </div>
+                <input type="radio" name="check-lessons" id="JavaScript-lessons" />
                 <ul class="lesson-list">
-                  <li class="lesson">Tìm hiểu về JavaScript</li>
-                  <li class="lesson">Biến (Variables)</li>
-                  <li class="lesson">Toán tử và hàm</li>
+                  <li class="lesson">
+                    <a href="#session-9" class="lesson-link">Tìm hiểu về JavaScript</a>
+                  </li>
+                  <li class="lesson">
+                    <a href="#session-9" class="lesson-link">Biến (Variables)</a>
+                  </li>
+                  <li class="lesson">
+                    <a href="#session-9" class="lesson-link">Toán tử và hàm</a>
+                  </li>
                 </ul>
               </div>
 
               <div class="unit">
-                <div class="unit-title">ReactJS:</div>
+                <div class="unit-title">
+                  <label class="open-lessons" for="ReactJS-lessons">ReactJS:</label>
+                  <label class="close-lessons" for="close-lessons">ReactJS:</label>
+                </div>
+                <input type="radio" name="check-lessons" id="ReactJS-lessons" />
                 <ul class="lesson-list">
-                  <li class="lesson">Tìm hiểu về JavaScript</li>
-                  <li class="lesson">Biến (Variables)</li>
-                  <li class="lesson">Toán tử và hàm</li>
+                  <li class="lesson">
+                    <a href="#session-9" class="lesson-link">Tìm hiểu về ReactJS</a>
+                  </li>
+                  <li class="lesson">
+                    <a href="#session-9" class="lesson-link">JSX, Components, Props</a>
+                  </li>
+                  <li class="lesson">
+                    <a href="#session-9" class="lesson-link">Create React App</a>
+                  </li>
                 </ul>
               </div>
 
               <div class="topic">Backend Exercises:</div>
               <div class="unit">
-                <div class="unit-title">JavaScript</div>
+                <div class="unit-title">
+                  <label class="open-lessons" for="NodeJS-lessons">NodeJS:</label>
+                  <label class="close-lessons" for="close-lessons">NodeJS:</label>
+                </div>
+                <input type="radio" name="check-lessons" id="NodeJS-lessons" />
                 <ul class="lesson-list">
-                  <li class="lesson">Client - Server</li>
-                  <li class="lesson">Client - Server</li>
+                  <li class="lesson">
+                    <a href="#session-9" class="lesson-link">Tìm hiểu về NodeJS</a>
+                  </li>
+                  <li class="lesson">
+                    <a href="#session-9" class="lesson-link">Props</a>
+                  </li>
+                  <li class="lesson">
+                    <a href="#session-9" class="lesson-link">Create</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -272,6 +309,7 @@
                     </div>
                   </li>
                 </ul>
+
                 <div class="repoGitHub">
                   <a
                     class="btn get-start"
