@@ -161,6 +161,25 @@
     true,
   );
 
+  on(
+    "click",
+    ".foreword",
+    function (e) {
+      if (select(this.hash)) {
+        e.preventDefault();
+
+        let preface = select("#preface");
+        if (preface.classList.contains("active")) {
+          preface.classList.remove("active");
+        } else {
+          preface.classList.add("active");
+        }
+        scrollto(this.hash);
+      }
+    },
+    false,
+  );
+
   /**
    * Scroll with ofset on page load with hash links in the url
    */
