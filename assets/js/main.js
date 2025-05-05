@@ -174,6 +174,7 @@
         } else {
           preface.classList.add("active");
         }
+
         scrollto(this.hash);
       }
     },
