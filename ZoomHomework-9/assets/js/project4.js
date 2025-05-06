@@ -37,7 +37,7 @@ let idInterval;
 let itemLength = sliderItems.length - 1;
 const sliderDot = [];
 
-let sliderWidth = carousel.offsetWidth;
+let sliderWidth = carousel?.offsetWidth;
 
 const setupSlider = () => {
   sliderItems.forEach((item, idx) => {

@@ -18,6 +18,7 @@
     <meta property="og:image:height" content="630" />
 
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
@@ -27,8 +28,8 @@
   <body>
     <header id="header">
       <div class="container header">
-        <a href="/" class="logo flex-center">
-          <img src="./assets/images/icons/f8_icon.webp" alt="" />
+        <a href="https://thanh-hoa95.github.io/f8_zoom_online" class="logo flex-center">
+          <img src="./assets/images/icons/f8_icon.webp" alt="f8 icon" />
           F8 Homework
         </a>
         <nav class="navbar">
@@ -48,7 +49,11 @@
                 </svg>
               </span>
               <ul>
-                <li><a class="item-link flex-center" href="#storages">HTML-CSS</a></li>
+                <li>
+                  <a class="item-link flex-center" href="https://thanh-hoa95.github.io/f8_zoom_online/#storages">
+                    HTML-CSS
+                  </a>
+                </li>
                 <li><a class="item-link flex-center" href="#storages">JavaScript</a></li>
               </ul>
             </li>
@@ -57,7 +62,7 @@
               <a href="#features" class="item-link">Features</a>
             </li>
             <li class="item">
-              <a href="#blog" class="item-link">Notes</a>
+              <a href="#notes" class="item-link">Notes</a>
             </li>
           </ul>
         </nav>
@@ -110,7 +115,7 @@
               </a>
             </div>
 
-            <div class="col col-right" data-aos="fade-left" data-delay="3000" data-aos-duration="2000">
+            <div class="col col-right">
               <div class="col-img flex-center">
                 <img class="f8-pro-free" src="./assets/images/image/f8-pro-free.jpg" alt="" />
               </div>
@@ -144,6 +149,7 @@
               <a href="#preface" class="foreword">Lời nói đầu</a>
               <div class="structure">Course Structure:</div>
               <div class="topic">Frontend Exercises:</div>
+              <input type="radio" name="check-lessons" id="close-lessons" />
               <div class="unit">
                 <div class="unit-title">
                   <label class="open-lessons" for="html-css-lessons">HTML - CSS / Khoa học máy tính:</label>
@@ -155,19 +161,19 @@
                     <a href="#session-1" class="lesson-link">1. Client - Server, HTML cơ bản</a>
                   </li>
                   <li class="lesson">
-                    <a href="#session-2" class="lesson-link">2. Attribute, Inline, Block, CSS cơ bản</a>
+                    <a href="#session-2" class="lesson-link updating">2. Attribute, Inline, Block, CSS cơ bản</a>
                   </li>
                   <li class="lesson">
                     <a href="#session-3" class="lesson-link">3. Kế thừa, Simple selectors, Box model</a>
                   </li>
                   <li class="lesson">
-                    <a href="#session-4" class="lesson-link">4. Forms và các thuộc tính CSS cơ bản</a>
+                    <a href="#session-4" class="lesson-link updating">4. Forms và các thuộc tính CSS cơ bản</a>
                   </li>
                   <li class="lesson">
-                    <a href="#session-5" class="lesson-link">5. Pseudo, units và colors</a>
+                    <a href="#session-5" class="lesson-link updating">5. Pseudo, units và colors</a>
                   </li>
                   <li class="lesson">
-                    <a href="#session-6" class="lesson-link">6. Flexbox và dàn trang</a>
+                    <a href="#session-6" class="lesson-link updating">6. Flexbox và dàn trang</a>
                   </li>
                   <li class="lesson">
                     <a href="#session-7" class="lesson-link">7. Thực hành code giao diện web</a>
@@ -177,6 +183,12 @@
                   </li>
                   <li class="lesson">
                     <a href="#session-9" class="lesson-link">9. Animation, BEM, Tags: table, iframe, video và audio</a>
+                  </li>
+                  <li class="lesson">
+                    <a href="#session-10" class="lesson-link">10. Custom checkbox và Responsive!</a>
+                  </li>
+                  <li class="lesson">
+                    <a href="#session-11" class="lesson-link updating">11. Nội dung đang được cập nhật!</a>
                   </li>
                 </ul>
               </div>
@@ -270,7 +282,7 @@
             </div>
 
             <section id="session-1" class="training-session">
-              <div class="session" data-aos="fade-left" data-delay="3000" data-aos-duration="2000">
+              <div class="session">
                 <a
                   class="note"
                   href="https://zoom.fullstack.edu.vn/?id=0cdb1780-4244-4e7d-b4b6-e6da98fd9cdf"
@@ -280,10 +292,18 @@
                   F8 Zoom online Session 1:
                 </a>
 
-                <h2 class="title">Client - Server, HTML cơ bản</h2>
+                <h2 class="title">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="http://zoom.fullstack.edu.vn/?id=15478554-6cd7-464b-b91c-e81dc48c4be1">
+                    Client - Server, HTML cơ bản
+                    <span class="goto-request"></span>
+                  </a>
+                </h2>
                 <ul class="list-item">
                   <li class="item">
-                    <div class="item-1">
+                    <div class="homework-1">
                       <h3 class="sub-title">
                         <a
                           class="homework-link"
@@ -292,6 +312,7 @@
                           rel="noopener noreferrer"
                           translate="no">
                           1. How 60 Minutes a Day Can Change Your Life
+                          <span class="goto-answer"></span>
                         </a>
                       </h3>
                       <p class="desc">Xây dựng trang HTML: How 60 Minutes a Day Can Change Your Life!</p>
@@ -299,7 +320,7 @@
                   </li>
 
                   <li class="item">
-                    <div class="item-1">
+                    <div class="homework-1">
                       <h3 class="sub-title">
                         <a
                           class="homework-link"
@@ -308,6 +329,7 @@
                           rel="noopener noreferrer"
                           translate="no">
                           2. Game NESTER
+                          <span class="goto-answer"></span>
                         </a>
                       </h3>
                       <p class="desc">Kết quả hoàn thành Game NESTER</p>
@@ -315,7 +337,7 @@
                   </li>
                 </ul>
 
-                <div class="repoGitHub">
+                <div class="view-repo">
                   <a
                     class="btn get-start"
                     target="_blank"
@@ -328,7 +350,7 @@
             </section>
 
             <section id="session-2" class="training-session">
-              <div class="session" data-aos="fade-left" data-delay="3000" data-aos-duration="2000">
+              <div class="session">
                 <a
                   class="note"
                   href="https://zoom.fullstack.edu.vn/?id=960c458e-b74a-4967-9859-090d1afc8334"
@@ -338,10 +360,19 @@
                   F8 Zoom online Session 2:
                 </a>
 
-                <h2 class="title">Attribute, Inline, Block, CSS cơ bản</h2>
+                <h2 class="title">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://zoom.fullstack.edu.vn/?id=cc5c675a-7f05-41cb-8284-9a681dd1f888">
+                    Attribute, Inline, Block, CSS cơ bản
+                    <span class="goto-request"></span>
+                  </a>
+                </h2>
+
                 <ul class="list-item">
                   <li class="item">
-                    <div class="item-2">
+                    <div class="homework-2">
                       <h3 class="sub-title">
                         <a
                           class="homework-link"
@@ -350,14 +381,15 @@
                           rel="noopener noreferrer"
                           translate="no">
                           1. Tạo trang hiển thị một bài thơ!
+                          <span class="goto-answer"></span>
                         </a>
                       </h3>
-                      <p class="desc">Luyện cấu trúc html cơ bản. Sử dụng thẻ tiêu đề phù hợp</p>
+                      <p class="desc">Luyện cấu trúc html cơ bản. Sử dụng thẻ tiêu đề phù hợp, làm quen với CSS.</p>
                     </div>
                   </li>
 
                   <li class="item">
-                    <div class="item-2">
+                    <div class="homework-2">
                       <h3 class="sub-title">
                         <a
                           class="homework-link"
@@ -366,6 +398,7 @@
                           rel="noopener noreferrer"
                           translate="no">
                           2. Tạo một bài viết nói về bài thơ
+                          <span class="goto-answer"></span>
                         </a>
                       </h3>
                       <p class="desc">
@@ -376,7 +409,7 @@
                   </li>
 
                   <li class="item">
-                    <div class="item-2">
+                    <div class="homework-2">
                       <h3 class="sub-title">
                         <a
                           class="homework-link"
@@ -385,25 +418,7 @@
                           rel="noopener noreferrer"
                           translate="no">
                           3. Highlight code trong nội dung bài viết
-                        </a>
-                      </h3>
-                      <p class="desc">
-                        Làm quen với thư việ PrismJS để highlight các khối code, luyện tập sử dụng thẻ html đúng ngữ
-                        nghĩa
-                      </p>
-                    </div>
-                  </li>
-
-                  <li class="item">
-                    <div class="item-2">
-                      <h3 class="sub-title">
-                        <a
-                          class="homework-link"
-                          href="https://thanh-hoa95.github.io/zoom-day1-3/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          translate="no">
-                          4. Xây dựng trang giới thiệu bản thân
+                          <span class="goto-answer"></span>
                         </a>
                       </h3>
                       <p class="desc">
@@ -412,8 +427,28 @@
                       </p>
                     </div>
                   </li>
+
+                  <li class="item">
+                    <div class="homework-2">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day1-3/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          4. Xây dựng trang giới thiệu bản thân
+                          <span class="goto-answer"></span>
+                        </a>
+                      </h3>
+                      <p class="desc">
+                        Luyện tư duy phân tích, bố cục trang, luyện tập sử dụng thẻ html đúng ngữ nghĩa. Luyện tập phân
+                        biệt và thành thạo các cách sử dụng CSS.
+                      </p>
+                    </div>
+                  </li>
                 </ul>
-                <div class="repoGitHub">
+                <div class="view-repo">
                   <a
                     class="btn get-start"
                     target="_blank"
@@ -426,7 +461,7 @@
             </section>
 
             <section id="session-3" class="training-session">
-              <div class="session" data-aos="fade-left" data-delay="3000" data-aos-duration="2000">
+              <div class="session">
                 <a
                   class="note"
                   href="https://zoom.fullstack.edu.vn/?id=960c458e-b74a-4967-9859-090d1afc8334"
@@ -436,10 +471,18 @@
                   F8 Zoom online Session 3:
                 </a>
 
-                <h2 class="title">Kế thừa, Simple selectors, Box model</h2>
+                <h2 class="title">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://zoom.fullstack.edu.vn/?id=c52a22d4-f9e5-43ae-8cc6-71682f1f195f">
+                    Kế thừa, Simple selectors, Box model
+                    <span class="goto-request"></span>
+                  </a>
+                </h2>
                 <ul class="list-item">
                   <li class="item">
-                    <div class="item-3">
+                    <div class="homework-3">
                       <h3 class="sub-title">
                         <a
                           class="homework-link"
@@ -448,13 +491,264 @@
                           rel="noopener noreferrer"
                           translate="no">
                           1. Chỉnh sửa, căn chỉnh lại giao diện dự án 1.
+                          <span class="goto-answer"></span>
                         </a>
                       </h3>
                       <p class="desc">Luyện cấu trúc html cơ bản. Sử dụng thẻ tiêu đề phù hợp</p>
                     </div>
                   </li>
                 </ul>
-                <div class="repoGitHub">
+                <div class="view-repo">
+                  <a
+                    class="btn get-start"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/Thanh-Hoa95/zoom-day1-3">
+                    Repo GitHub
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <section id="session-4" class="training-session">
+              <div class="session">
+                <a
+                  class="note"
+                  href="https://zoom.fullstack.edu.vn/?id=960c458e-b74a-4967-9859-090d1afc8334"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  translate="no">
+                  F8 Zoom online Session 4:
+                </a>
+
+                <h2 class="title">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://zoom.fullstack.edu.vn/?id=c52a22d4-f9e5-43ae-8cc6-71682f1f195f">
+                    Kế thừa, Simple selectors, Box model
+                    <span class="goto-request"></span>
+                  </a>
+                </h2>
+                <ul class="list-item">
+                  <li class="item">
+                    <div class="homework-4">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day1-3/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          1. Chỉnh sửa, căn chỉnh lại giao diện dự án 1.
+                          <span class="goto-answer"></span>
+                        </a>
+                      </h3>
+                      <p class="desc">Luyện cấu trúc html cơ bản. Sử dụng thẻ tiêu đề phù hợp</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="view-repo">
+                  <a
+                    class="btn get-start"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/Thanh-Hoa95/zoom-day1-3">
+                    Repo GitHub
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <section id="session-5" class="training-session">
+              <div class="session">
+                <a
+                  class="note"
+                  href="https://zoom.fullstack.edu.vn/?id=960c458e-b74a-4967-9859-090d1afc8334"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  translate="no">
+                  F8 Zoom online Session 5:
+                </a>
+
+                <h2 class="title">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://zoom.fullstack.edu.vn/?id=c52a22d4-f9e5-43ae-8cc6-71682f1f195f">
+                    Kế thừa, Simple selectors, Box model
+                    <span class="goto-request"></span>
+                  </a>
+                </h2>
+                <ul class="list-item">
+                  <li class="item">
+                    <div class="homework-5">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day1-3/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          1. Chỉnh sửa, căn chỉnh lại giao diện dự án 1.
+                          <span class="goto-answer"></span>
+                        </a>
+                      </h3>
+                      <p class="desc">Luyện cấu trúc html cơ bản. Sử dụng thẻ tiêu đề phù hợp</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="view-repo">
+                  <a
+                    class="btn get-start"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/Thanh-Hoa95/zoom-day1-3">
+                    Repo GitHub
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <section id="session-6" class="training-session">
+              <div class="session">
+                <a
+                  class="note"
+                  href="https://zoom.fullstack.edu.vn/?id=960c458e-b74a-4967-9859-090d1afc8334"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  translate="no">
+                  F8 Zoom online Session 6:
+                </a>
+
+                <h2 class="title">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://zoom.fullstack.edu.vn/?id=c52a22d4-f9e5-43ae-8cc6-71682f1f195f">
+                    Kế thừa, Simple selectors, Box model
+                    <span class="goto-request"></span>
+                  </a>
+                </h2>
+                <ul class="list-item">
+                  <li class="item">
+                    <div class="homework-6">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day1-3/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          1. Chỉnh sửa, căn chỉnh lại giao diện dự án 1.
+                          <span class="goto-answer"></span>
+                        </a>
+                      </h3>
+                      <p class="desc">Luyện cấu trúc html cơ bản. Sử dụng thẻ tiêu đề phù hợp</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="view-repo">
+                  <a
+                    class="btn get-start"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/Thanh-Hoa95/zoom-day1-3">
+                    Repo GitHub
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <section id="session-7" class="training-session">
+              <div class="session">
+                <a
+                  class="note"
+                  href="https://zoom.fullstack.edu.vn/?id=960c458e-b74a-4967-9859-090d1afc8334"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  translate="no">
+                  F8 Zoom online Session 7:
+                </a>
+
+                <h2 class="title">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://zoom.fullstack.edu.vn/?id=c52a22d4-f9e5-43ae-8cc6-71682f1f195f">
+                    Kế thừa, Simple selectors, Box model
+                    <span class="goto-request"></span>
+                  </a>
+                </h2>
+                <ul class="list-item">
+                  <li class="item">
+                    <div class="homework-7">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day1-3/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          1. Chỉnh sửa, căn chỉnh lại giao diện dự án 1.
+                          <span class="goto-answer"></span>
+                        </a>
+                      </h3>
+                      <p class="desc">Luyện cấu trúc html cơ bản. Sử dụng thẻ tiêu đề phù hợp</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="view-repo">
+                  <a
+                    class="btn get-start"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/Thanh-Hoa95/zoom-day1-3">
+                    Repo GitHub
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <section id="session-8" class="training-session">
+              <div class="session">
+                <a
+                  class="note"
+                  href="https://zoom.fullstack.edu.vn/?id=960c458e-b74a-4967-9859-090d1afc8334"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  translate="no">
+                  F8 Zoom online Session 8:
+                </a>
+
+                <h2 class="title">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://zoom.fullstack.edu.vn/?id=c52a22d4-f9e5-43ae-8cc6-71682f1f195f">
+                    Kế thừa, Simple selectors, Box model
+                    <span class="goto-request"></span>
+                  </a>
+                </h2>
+                <ul class="list-item">
+                  <li class="item">
+                    <div class="homework-8">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day1-3/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          1. Chỉnh sửa, căn chỉnh lại giao diện dự án 1.
+                          <span class="goto-answer"></span>
+                        </a>
+                      </h3>
+                      <p class="desc">Luyện cấu trúc html cơ bản. Sử dụng thẻ tiêu đề phù hợp</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="view-repo">
                   <a
                     class="btn get-start"
                     target="_blank"
@@ -467,7 +761,7 @@
             </section>
 
             <section id="session-9" class="training-session">
-              <div class="session" data-aos="fade-left" data-delay="3000" data-aos-duration="2000">
+              <div class="session">
                 <a
                   class="note"
                   href="https://zoom.fullstack.edu.vn/?id=960c458e-b74a-4967-9859-090d1afc8334"
@@ -477,10 +771,18 @@
                   F8 Zoom online Session 9:
                 </a>
 
-                <h2 class="title">Animation, BEM, Tags: table, iframe, video và audio</h2>
+                <h2 class="title">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://zoom.fullstack.edu.vn/?id=bd934b71-9c20-4674-b5cb-fabc4356b23a">
+                    Animation, BEM, Tags: table, iframe, video và audio
+                    <span class="goto-request"></span>
+                  </a>
+                </h2>
                 <ul class="list-item">
                   <li class="item">
-                    <div class="item-9">
+                    <div class="homework-9">
                       <h3 class="sub-title">
                         <a
                           class="homework-link"
@@ -489,6 +791,7 @@
                           rel="noopener noreferrer"
                           translate="no">
                           1. Phân tích và code Animation
+                          <span class="goto-answer"></span>
                         </a>
                       </h3>
                       <p class="desc">Luyện tập phân tích, áp dụng animation và animation-delay tạo hoạt ảnh.</p>
@@ -496,7 +799,7 @@
                   </li>
 
                   <li class="item">
-                    <div class="item-9">
+                    <div class="homework-9">
                       <h3 class="sub-title">
                         <a
                           class="homework-link"
@@ -505,6 +808,7 @@
                           rel="noopener noreferrer"
                           translate="no">
                           2. Xây dựng trang Contact
+                          <span class="goto-answer"></span>
                         </a>
                       </h3>
                       <p class="desc">
@@ -515,7 +819,7 @@
                   </li>
 
                   <li class="item">
-                    <div class="item-9">
+                    <div class="homework-9">
                       <h3 class="sub-title">
                         <a
                           class="homework-link"
@@ -524,6 +828,7 @@
                           rel="noopener noreferrer"
                           translate="no">
                           3. Xây dựng giao diện Bảng
+                          <span class="goto-answer"></span>
                         </a>
                       </h3>
                       <p class="desc">
@@ -534,7 +839,7 @@
                   </li>
 
                   <li class="item">
-                    <div class="item-9">
+                    <div class="homework-9">
                       <h3 class="sub-title">
                         <a
                           class="homework-link"
@@ -543,6 +848,7 @@
                           rel="noopener noreferrer"
                           translate="no">
                           4. Hoàn thành CSS selector qua Game
+                          <span class="goto-answer"></span>
                         </a>
                       </h3>
                       <p class="desc">
@@ -551,7 +857,7 @@
                     </div>
                   </li>
                 </ul>
-                <div class="repoGitHub">
+                <div class="view-repo">
                   <a
                     class="btn get-start"
                     target="_blank"
@@ -563,245 +869,141 @@
               </div>
             </section>
 
-            <!-- https://zoom.fullstack.edu.vn/?id=08c901f1-7549-4fb2-8735-342fb35086c6  -->
+            <section id="session-10" class="training-session">
+              <div class="session">
+                <a
+                  class="note"
+                  href="https://zoom.fullstack.edu.vn/?id=11c041f0-3470-4537-87e0-15b24e988eda"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  translate="no">
+                  F8 Zoom online Session 10:
+                </a>
 
-            <!--
-            <section id="features" class="features section-news">
-              <div class="row">
-                <div class="col col-left">
+                <h2 class="title">
                   <a
-                    class="note"
-                    href="https://zoom.fullstack.edu.vn/?id=946fe706-b5ca-4aa6-9c85-079747ffd53c"
                     target="_blank"
                     rel="noopener noreferrer"
-                    translate="no">
-                    F8 Zoom online Session 9:
+                    href="https://zoom.fullstack.edu.vn/?id=c52a22d4-f9e5-43ae-8cc6-71682f1f195f">
+                    Custom checkbox và Responsive
+                    <span class="goto-request"></span>
                   </a>
-
-                  <h2 class="title">Attribute, Inline, Block, CSS cơ bản</h2>
-                  <p class="desc">
-                    We bring together everything that’s required to build websites and apps that accept payments and
-                    send payouts globally. We are the best platform.
-                  </p>
-                  <ul class="menu">
-                    <li class="item">Global Payments</li>
-                    <li class="item">One-Click Purchase</li>
-                    <li class="item">Friendly Price</li>
-                  </ul>
+                </h2>
+                <ul class="list-item">
+                  <li class="item">
+                    <div class="homework-10">
+                      <h3 class="sub-title">
+                        <a
+                          class="homework-link"
+                          href="https://thanh-hoa95.github.io/zoom-day1-3/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          translate="no">
+                          1. Chỉnh sửa, căn chỉnh lại giao diện dự án 1.
+                          <span class="goto-answer"></span>
+                        </a>
+                      </h3>
+                      <p class="desc">Luyện cấu trúc html cơ bản. Sử dụng thẻ tiêu đề phù hợp</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="view-repo">
                   <a
                     class="btn get-start"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://github.com/Thanh-Hoa95/zoom-day9">
+                    href="https://github.com/Thanh-Hoa95/zoom-day1-3">
                     Repo GitHub
                   </a>
                 </div>
-
-
-
-
-              <div class="send-money">
-                    <div class="fly-icon">
-                      <img src="./assets/images/icons/fly.svg" alt="" />
-                    </div>
-                    <div class="payment">
-                      <span class="money flex-center">
-                        Send Money
-                        <span>- $600</span>
-                      </span>
-                      <span class="receive flex-center">
-                        Airbnb Payment
-                        <span>Sep 23</span>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div class="income">
-                    <img src="./assets/images/icons/income.svg" alt="" />
-                  </div>
-                </div>
               </div>
             </section>
 
-            <section id="about" class="about section-news">
-              <div class="row">
-                 <div class="col col-left">
-                  <div class="col-img">
-                    <img src="./assets/images/image/img2.png" alt="" />
-                  </div>
-
-                  <div class="method">
-                    <span class="instructions">Choose payment method:</span>
-                    <div class="detail">
-                      <a href="#" class="icon-brand">
-                        <img src="./assets/images/icons/master-card.svg" alt="" />
-                      </a>
-                      <a href="#" class="icon-brand">
-                        <img src="./assets/images/icons/maestro.svg" alt="" />
-                      </a>
-                      <a href="#" class="icon-brand">
-                        <img src="./assets/images/icons/asia-card.svg" alt="" />
-                      </a>
-                    </div>
-
-                    <div class="detail">
-                      <a href="#" class="icon-brand">
-                        <img src="./assets/images/icons/visa-card.svg" alt="" />
-                      </a>
-                      <a href="#" class="icon-brand">
-                        <img src="./assets/images/icons/payper.svg" alt="" />
-                      </a>
-                      <a href="#" class="icon-brand">
-                        <img src="./assets/images/icons/more.svg" alt="" />
-                      </a>
-                    </div>
-                    <a href="#" class="dollar flex-center">
-                      <img src="./assets/images/icons/dolla.svg" alt="" />
-                    </a>
-                  </div>
-                </div>
-
-                <div class="col col-right">
-                  <a
-                    class="note"
-                    href="https://zoom.fullstack.edu.vn/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    translate="no">
-                    F8 Zoom online
-                  </a>
-                  <h2 class="title">Session 3: Kế thừa, Simple selectors, Box model</h2>
-                  <p class="desc">
-                    We bring together eveything that’s required to build websites and apps that accept payments and send
-                    payouts globally. We are the best platform.
-                  </p>
-                  <ul class="menu">
-                    <li class="item">Powerfull App</li>
-                    <li class="item">Transparency And Speed</li>
-                    <li class="item">Multiple Use Capabilities</li>
-                  </ul>
-                  <div class="btn get-start">Repo GitHub</div>
-                </div>
-              </div>
-            </section>
-
-            <section id="feedback" class="feedback">
-              <div class="section-top">
-                <span class="note">Our Testimonial</span>
-                <h2 class="title">What Clients Says</h2>
-                <p class="desc">
-                  Read what clients says about us and about our online banking services that may inspire you
-                </p>
-              </div>
-
-              <div class="row">
-                <div class="col col-left">
-                  <p class="news-desc">
-                    Fantastic platform for online banking. The best online banking platform I have used. Payments,
-                    loans, and money transfers have never been so much easier before. I am very much happy about this
-                    great online bank.
-                  </p>
-
-                  <div class="subject">
-                    <div class="avatar flex-center">
-                      <img src="./assets/images/image/img1.png" alt="" />
-                    </div>
-                    <div class="member-name">Alastair Cook</div>
-                    <div class="job">Businessmen</div>
-                  </div>
-                </div>
-
-                <div class="col col-right">
-                  <p class="news-desc">
-                    Fantastic platform for online banking. The best online banking platform I have used. Payments,
-                    loans, and money transfers have never been so much easier before. I am very much happy about this
-                    great online bank.
-                  </p>
-                  <div class="subject">
-                    <div class="avatar flex-center">
-                      <img src="./assets/images/image/img2.png" alt="" />
-                    </div>
-                    <div class="member-name">Alastair Foaks</div>
-                    <div class="job">Businessmen</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="list-dot">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-              </div>
-            </section>
-
-            <section id="blog" class="blog">
-              <div class="blog-top">
+            <section id="session-11" class="training-session training-session-11">
+              <div class="session-top">
                 <div class="top-left">
-                  <div class="note">Our Blog</div>
-                  <h2 class="title">Get The Updates</h2>
-                  <p class="desc">
-                    Read our blog for the regular updates about us and about our online banking services that may
-                    inspire you
-                  </p>
+                  <a
+                    class="note"
+                    href="https://zoom.fullstack.edu.vn/?id=960c458e-b74a-4967-9859-090d1afc8334"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    translate="no">
+                    F8 Zoom online Session 11:
+                  </a>
+
+                  <h2 class="title">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://zoom.fullstack.edu.vn/?id=c52a22d4-f9e5-43ae-8cc6-71682f1f195f">
+                      Get The Updates
+                      <span class="goto-request"></span>
+                    </a>
+                  </h2>
                 </div>
-
-                <div>
-                  <div class="btn read-all">Read All</div>
-                </div>
-              </div>
-
-              <div class="blog-content">
-                <div class="blog-item">
-                  <div class="blog-img">
-                    <img src="./assets/images/image/img4.png" alt="" />
-                  </div>
-
-                  <div class="item-content">
-                    <span class="note">July 03, 2022</span>
-                    <h4 class="blog-title sub-title">
-                      Online bank is the best and secure way to save in the future...
-                    </h4>
-                    <div class="btn-link read-block">Read Blog</div>
-                  </div>
-                </div>
-
-                <div class="blog-item">
-                  <div class="blog-img">
-                    <img src="./assets/images/image/img5.png" alt="" />
-                  </div>
-
-                  <div class="item-content">
-                    <span class="note">July 03, 2022</span>
-                    <h4 class="blog-title sub-title">Why do you need to open a bank account in online..</h4>
-                    <div class="btn-link read-block">Read Blog</div>
-                  </div>
-                </div>
-
-                <div class="blog-item">
-                  <div class="blog-img">
-                    <img src="./assets/images/image/img6.png" alt="" />
-                  </div>
-
-                  <div class="item-content">
-                    <span class="note">July 03, 2022</span>
-                    <h4 class="blog-title sub-title">The benefits that we get from credit card at anytime...</h4>
-                    <div class="btn-link read-block">Read Blog</div>
-                  </div>
-                </div>
-
-                <div class="blog-item">
-                  <div class="blog-img">
-                    <img src="./assets/images/image/img7.png" alt="" />
-                  </div>
-
-                  <div class="item-content">
-                    <span class="note">July 03, 2022</span>
-                    <h4 class="blog-title sub-title">How to manage your money in online in this busy days...</h4>
-                    <div class="btn-link read-block">Read Blog</div>
-                  </div>
+                <div class="view-repo">
+                  <a
+                    class="btn get-start"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/Thanh-Hoa95/zoom-day1-3">
+                    View Repo
+                  </a>
                 </div>
               </div>
-            </section> -->
+
+              <div class="session-content">
+                <div class="card session-card">
+                  <a href="" class="card-img-link">
+                    <img src="./assets/images/image/65b67e8b9f5a4.png" alt="" />
+                  </a>
+
+                  <div class="card-content">
+                    <span class="time-update">May 6, 2025</span>
+                    <h3 class="card-title sub-title line-clamp">1. Chỉnh sửa, căn chỉnh lại giao diện dự án 1.</h3>
+                    <div class="card-desc desc">Why do you need to open a bank account in online..</div>
+                  </div>
+                </div>
+
+                <div class="card session-card">
+                  <a href="" class="card-img-link">
+                    <img src="./assets/images/image/65b67e8b9f5a4.png" alt="" />
+                  </a>
+
+                  <div class="card-content">
+                    <span class="time-update">May 6, 2025</span>
+                    <h4 class="card-title sub-title line-clamp">Why do you need to open a bank account in online..</h4>
+                    <div class="card-desc desc">Why do you need to open a bank account in online..</div>
+                  </div>
+                </div>
+
+                <div class="card session-card">
+                  <a href="" class="card-img-link">
+                    <img src="./assets/images/image/65b67e8b9f5a4.png" alt="" />
+                  </a>
+
+                  <div class="card-content">
+                    <span class="time-update">May 6, 2025</span>
+                    <h4 class="card-title sub-title line-clamp">Why do you need to open a bank account in online..</h4>
+                    <div class="card-desc desc">Why do you need to open a bank account in online..</div>
+                  </div>
+                </div>
+
+                <div class="card session-card">
+                  <a href="" class="card-img-link">
+                    <img src="./assets/images/image/65b67e8b9f5a4.png" alt="" />
+                  </a>
+
+                  <div class="card-content">
+                    <span class="time-update">May 6, 2025</span>
+                    <h4 class="card-title sub-title line-clamp">Why do you need to open a bank account in online..</h4>
+                    <div class="card-desc desc">Why do you need to open a bank account in online..</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="notes" class="blog"></section>
 
             <section id="download-app">
               <div class="download-app">
@@ -815,18 +1017,18 @@
 
                 <div class="app-group">
                   <a href="#!" class="app-link">
-                    <img src="./assets/images/icons/google.svg" alt="" />
+                    <img src=" " alt="" />
                   </a>
                   <a href="#!" class="app-link">
-                    <img src="./assets/images/icons/ap.svg" alt="" />
+                    <img src=" " alt="" />
                   </a>
                 </div>
 
-                <img class="app-start start1" src="./assets/images/icons/star.svg" alt="" />
-                <img class="app-start start2" src="./assets/images/icons/star.svg" alt="" />
-                <img class="app-start start3" src="./assets/images/icons/star.svg" alt="" />
-                <img class="app-start start4" src="./assets/images/icons/star.svg" alt="" />
-                <img class="app-start start5" src="./assets/images/icons/star.svg" alt="" />
+                <img class="app-start start1" src="./assets/images/icons/dog-foot.svg" alt="" />
+                <img class="app-start start2" src="./assets/images/icons/dog-foot.svg" alt="" />
+                <img class="app-start start3" src="./assets/images/icons/dog-foot.svg" alt="" />
+                <img class="app-start start4" src="./assets/images/icons/dog-foot.svg" alt="" />
+                <img class="app-start start5" src="./assets/images/icons/dog-foot.svg" alt="" />
               </div>
             </section>
           </div>
@@ -838,7 +1040,7 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-col logo">
-            <img src="./assets/images/icons/logo.svg" alt="" />
+            <img src="./assets/images/icons/f8_icon.webp" alt="" />
           </div>
 
           <ul class="footer-col menu">
@@ -898,7 +1100,7 @@
     </footer>
     <a class="back-top" href="#Top"></a>
 
-    <script src=".//assets/vendor/aos/aos.js"></script>
+    <script src="./assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/project5.js"></script>

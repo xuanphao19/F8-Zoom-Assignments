@@ -1,47 +1,18 @@
 /* ===== header ===== */
-
-#header {
-  position: sticky;
-  top: 0;
-  padding-block: 26px;
-  background: var(--bs-bgr-color);
-  z-index: 9999;
-  box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.02), -4px 4px 12px 0px rgba(0, 0, 0, 0.02);
-}
-
-.header .list-item,
-.header {
+.wbr-animation {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  height: calc(100vh - 100px);
+  background-color: #f0f0f0;
 }
-
-.header .item {
-  margin-left: 36px;
-  transition: color 0.2s linear;
-}
-
-.header .item:hover .item-link {
-  color: var(--title-text-color);
-  font-weight: 600;
-}
-
-.header .sign-up {
-  padding: 12px 28px;
-  background: transparent;
-  color: var(--title-text-color);
-  border: 1px solid currentColor;
-}
-body {
-  display: flex;
-}
-
 .wbr {
   display: flex;
   justify-content: space-evenly;
   margin: auto;
   width: 50%;
   max-width: 450px;
+  /* height: calc(100vh - 200px); */
   animation: wbr 5s infinite linear;
   background: #9efe93;
 }

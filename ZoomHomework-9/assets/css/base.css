@@ -246,3 +246,22 @@ button,
   visibility: visible;
   opacity: 1;
 }
+
+.link-home {
+  position: fixed;
+  top: 160px;
+  right: 20px;
+  height: 42px;
+  padding: 8px;
+  border-radius: 10px;
+  color: var(--primary-color);
+  border: 1px solid currentColor;
+  z-index: 999999;
+  background: rgb(80 82 84 / 43%);
+  padding: 0.8rem 1.6rem;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.link-home:hover {
+  background: rgb(80 82 84 / 63%);
+}
