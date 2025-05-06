@@ -5,7 +5,7 @@
  * License: https://bootstrapmade.com/license/
  */
 (function () {
-  "use strict";
+  ("use strict");
 
   /**
    * Easy selector helper function
@@ -165,21 +165,42 @@
     "click",
     ".foreword",
     function (e) {
-      if (select(this.hash)) {
-        e.preventDefault();
+      const target = select(this.hash);
+      if (!target) return;
 
-        let preface = select("#preface");
-        if (preface.classList.contains("active")) {
-          preface.classList.remove("active");
+      e.preventDefault();
+
+      const preface = select("#preface");
+
+      const isInViewport = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      };
+
+      if (preface.classList.contains("active")) {
+        if (!isInViewport(preface)) {
+          scrollto("#preface");
         } else {
-          preface.classList.add("active");
+          preface.classList.remove("active");
         }
-
-        scrollto(this.hash);
+      } else {
+        preface.classList.add("active");
+        scrollto("#preface");
       }
     },
     false,
   );
+
+  /* *
+  disabled an element with class .updating
+*/
+
+  on("click", ".updating", (e) => e.preventDefault(), true);
 
   /**
    * Scroll with ofset on page load with hash links in the url
