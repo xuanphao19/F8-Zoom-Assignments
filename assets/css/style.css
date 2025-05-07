@@ -224,15 +224,13 @@
 
 .lesson-link:hover,
 .lesson-link.active {
-  color: var(--btn-link-text-color);
-  background: var(--bgr-second-color);
-  border-color: transparent #3122aa #877be4 #3122aa;
+  background: var(--bgr-color);
 }
 
 .foreword,
 .lesson-link,
 .unit-title {
-  transition: color 0.25s linear, background 0.25s linear, border 0.25s linear;
+  transition: color 0.25s linear, background 0.25s linear;
 }
 
 .foreword:hover,

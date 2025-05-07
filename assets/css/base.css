@@ -393,6 +393,7 @@ button,
 .header .item-link:hover .icon-link {
   transform: rotate(360deg);
 }
+
 .header .actions {
   width: max-content;
 }
