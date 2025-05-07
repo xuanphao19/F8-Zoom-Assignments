@@ -371,6 +371,16 @@ button,
   right: unset;
 }
 
+.item.dropdown .item-link:not(:has(.icon-link))::after {
+  right: 0;
+}
+
+.item.dropdown .item-link:not(:has(.icon-link)):hover::after {
+  width: 100%;
+  left: 0;
+  right: unset;
+}
+
 .header .item-link:hover {
   color: var(--bgr-color);
 }
