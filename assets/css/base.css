@@ -371,11 +371,11 @@ button,
   right: unset;
 }
 
-.item.dropdown .item-link:not(:has(.icon-link))::after {
+.item.dropdown ul .item-link::after {
   right: 0;
 }
 
-.item.dropdown .item-link:not(:has(.icon-link)):hover::after {
+.item.dropdown ul .item-link:hover::after {
   width: 100%;
   left: 0;
   right: unset;
