@@ -199,8 +199,38 @@
   /* *
   disabled an element with class .updating
 */
-
   on("click", ".updating", (e) => e.preventDefault(), true);
+
+  /**
+   * activate unit title
+   */
+  on(
+    "click",
+    ".unit-title",
+    function (e) {
+      if (!e.target.classList.contains("active")) {
+        e.preventDefault();
+        select(".unit-title.active")?.classList.remove("active");
+      }
+      this.classList.toggle("active");
+    },
+    true,
+  );
+
+  /**
+   * lesson-link add active class
+   */
+  on(
+    "click",
+    ".lesson-link",
+    function (e) {
+      if (!e.target.classList.contains("active")) {
+        select(".lesson-link.active")?.classList.remove("active");
+        this.classList.add("active");
+      }
+    },
+    true,
+  );
 
   /**
    * Scroll with ofset on page load with hash links in the url
