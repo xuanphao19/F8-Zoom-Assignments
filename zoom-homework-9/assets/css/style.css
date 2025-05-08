@@ -1,10 +1,11 @@
-/* ===== header ===== */
+body {
+  min-height: unset;
+}
 .wbr-animation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 100px);
-  background-color: #f0f0f0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
 }
 .wbr {
   display: flex;
@@ -12,7 +13,6 @@
   margin: auto;
   width: 50%;
   max-width: 450px;
-  /* height: calc(100vh - 200px); */
   animation: wbr 5s infinite linear;
   background: #9efe93;
 }

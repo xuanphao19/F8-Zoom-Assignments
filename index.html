@@ -29,14 +29,14 @@
     <header id="header">
       <div class="bgr-blur"></div>
       <div class="container header">
-        <a href="./" class="logo flex-center">
+        <a href="#top" class="logo flex-center">
           <img src="./assets/images/icons/f8_icon.webp" alt="f8 icon" />
           F8 Homework
         </a>
         <nav class="navbar">
           <ul class="list-item">
             <li class="item">
-              <a href="./" class="item-link">Home</a>
+              <a href="#top" class="item-link">Home</a>
             </li>
             <li class="item dropdown">
               <span class="item-link flex-center">
@@ -60,10 +60,10 @@
             </li>
 
             <li class="item">
-              <a href="#features" class="item-link">Features</a>
+              <a href="#download-app" class="item-link">Features</a>
             </li>
             <li class="item">
-              <a href="#notes" class="item-link">Notes</a>
+              <a href="./notes.html" class="item-link">Notes</a>
             </li>
           </ul>
         </nav>
@@ -74,7 +74,7 @@
       </div>
     </header>
 
-    <main class="main">
+    <main class="main" aria-hidden="false">
       <div class="container">
         <section id="hero" class="hero">
           <div class="row">
@@ -1354,7 +1354,7 @@
           <ul class="footer-col menu">
             <span class="title">Sitemap</span>
             <li class="item">
-              <a class="item-link" href="./">Home</a>
+              <a class="item-link" href="#top">Home</a>
             </li>
             <li class="item">
               <a class="item-link" href="./">About</a>
@@ -1392,7 +1392,9 @@
 
             <div class="email-address title">News letter</div>
             <div class="send-email">
-              <input type="text" placeholder="Your email" />
+              <label form="#mail" class="input-email">
+                <input id="mail" name="input" type="text" placeholder="Your email" />
+              </label>
               <div class="btn subscribe">Subscribe</div>
             </div>
           </div>
