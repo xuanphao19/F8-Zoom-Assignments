@@ -461,6 +461,7 @@
 .example {
   position: relative;
   padding: 4rem;
+  margin-top: 60px;
   text-align: center;
   background-color: #7264d6;
   border-radius: 2.4rem;

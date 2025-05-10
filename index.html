@@ -1436,8 +1436,8 @@
 
                   <h5>🔸 Màu sắc &amp; Hình nền:</h5>
                   <ul>
-                    <li>color, background-color.</li>
-                    <li>background, background-image, background-size, background-position.</li>
+                    <li>color, filter, fill, stroke - Hex, RGBA, transparent.</li>
+                    <li>background, background-color, background-image, background-size, background-position.</li>
                   </ul>
 
                   <h5>🔸 Văn bản:</h5>
@@ -1472,9 +1472,12 @@
 
                 <h5>🔸 Chuyển động &amp; Hiệu ứng:</h5>
                 <ul>
-                  <li>transition.</li>
+                  <li>cursor.</li>
+                  <li>opacity, overflow.</li>
+                  <li>transform, transition.</li>
                   <li>animation (keyframes).</li>
                   <li>transform (scale, rotate, translate).</li>
+                  <li>scroll-snap, scroll-padding, scroll-margin, scroll-behavior.</li>
                 </ul>
 
                 <h5>🔸 Responsive:</h5>
@@ -1493,6 +1496,13 @@
                 <ul>
                   <li>--primary-color: #333;</li>
                   <li>var(--primary-color)</li>
+                </ul>
+
+                <h4>➔ Nguyên tắc quan trọng:</h4>
+                <ul>
+                  <li>&#9989; Ưu tiên external CSS.</li>
+                  <li>&#9989; Tổ chức mã nguồn CSS rõ ràng, dễ bảo trì.</li>
+                  <li>&#9989; Tránh lạm dụng inline CSS, sử dụng cascade, specificity &amp; class, ID hợp lý.</li>
                 </ul>
               </div>
 
@@ -1537,21 +1547,21 @@
                   <li>Giữ CSS gọn, tránh inline quá nhiều (tăng tốc độ tải trang).</li>
                 </ul>
               </div>
-            </section>
 
-            <section id="example">
-              <div class="example">
-                <div class="example-top">
-                  <h2 class="title">Illustration structure</h2>
-                  <p class="desc">
-                    Illustrate the difference between the regular nested HTML structure and the more modern and SEO
-                    friendly HTML5 semantic structure.
-                  </p>
-                </div>
+              <div id="example">
+                <div class="example">
+                  <div class="example-top">
+                    <h2 class="title">Illustration structure</h2>
+                    <p class="desc">
+                      Illustrate the difference between the regular nested HTML structure and the more modern and SEO
+                      friendly HTML5 semantic structure.
+                    </p>
+                  </div>
 
-                <div class="example-img">
-                  <img class="bad-structure" src="./assets/images/image/bad-structure.png" alt="bad-structure" />
-                  <img class="good-structure" src="./assets/images/image/good-structure.png" alt="good-structure" />
+                  <div class="example-img">
+                    <img class="bad-structure" src="./assets/images/image/bad-structure.png" alt="bad-structure" />
+                    <img class="good-structure" src="./assets/images/image/good-structure.png" alt="good-structure" />
+                  </div>
                 </div>
               </div>
             </section>
